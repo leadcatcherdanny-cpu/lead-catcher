@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lead Catcher: never lose a customer email again</title>
+<meta name="description" content="Lead Catcher spots new customer inquiries in your Gmail, logs them in a Google Sheet and drafts a reply. Nothing is sent without your approval. Free 30-day pilot.">
+<style>
+  :root { --ink:#1d2433; --muted:#566074; --bg:#ffffff; --soft:#f3f6fa; --accent:#1f6f50; --accent-dark:#175a40; --line:#dde3ea; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; font-size:18px; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+  header { background:var(--soft); border-bottom:1px solid var(--line); padding:48px 0 40px; }
+  .brand { font-weight:700; color:var(--accent); letter-spacing:.02em; margin:0 0 12px; font-size:16px; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 16px; }
+  h2 { font-size:1.45rem; line-height:1.25; margin:0 0 14px; }
+  h3 { font-size:1.08rem; margin:22px 0 6px; }
+  p { margin:0 0 14px; }
+  .lead { font-size:1.15rem; color:var(--muted); }
+  section { padding:40px 0; border-bottom:1px solid var(--line); }
+  section.alt { background:var(--soft); }
+  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:700; padding:14px 22px; border-radius:8px; margin-top:8px; }
+  .btn:hover, .btn:focus { background:var(--accent-dark); }
+  .small { font-size:.92rem; color:var(--muted); }
+  ol.steps { list-style:none; padding:0; margin:0; counter-reset:step; }
+  ol.steps li { counter-increment:step; position:relative; padding:0 0 18px 52px; }
+  ol.steps li::before { content:counter(step); position:absolute; left:0; top:0; width:36px; height:36px; border-radius:50%; background:var(--accent); color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center; }
+  ul { padding-left:22px; margin:0 0 14px; }
+  li { margin-bottom:6px; }
+  .box { background:#fff; border:2px solid var(--accent); border-radius:10px; padding:20px; }
+  .price { display:grid; gap:14px; grid-template-columns:1fr; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:18px; }
+  .card strong { font-size:1.2rem; }
+  details { border:1px solid var(--line); border-radius:8px; padding:12px 16px; margin-bottom:10px; background:#fff; }
+  summary { font-weight:700; cursor:pointer; }
+  details p { margin:10px 0 4px; }
+  a { color:var(--accent-dark); }
+  footer { padding:28px 0 40px; }
+  @media (min-width:640px) { h1 { font-size:2.5rem; } .price { grid-template-columns:1fr 1fr; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="brand">LEAD CATCHER</p>
+    <h1>Stop losing customers in a busy inbox.</h1>
+    <p class="lead">Lead Catcher watches your Gmail for new customer inquiries, writes each one down in a Google Sheet, and drafts a reply for you to check. You stay in charge: nothing is sent unless you press Send.</p>
+    <a class="btn" href="mailto:oharedanny340@gmail.com?subject=Lead%20Catcher%20free%20pilot">Ask about the free 30-day pilot</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>The problem</h2>
+    <p>You're on a roof, under a car, or with a client. Meanwhile a "Can you give me a quote?" email lands between receipts, newsletters and spam. By the time you see it, the customer may have hired someone who answered first.</p>
+    <p>Lead Catcher is built to make sure those emails get noticed, written down, and answered quickly, without you sitting at a desk.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>It spots the real leads.</strong> Quote requests and "can you come take a look?" emails get flagged. Spam, receipts and newsletters are skipped.</li>
+      <li><strong>It logs each one in your Google Sheet:</strong> name, contact info, what they need, where, how urgent, and the next step. The Sheet is in your own Google account.</li>
+      <li><strong>It drafts a reply</strong> right in the email thread. You read it, change anything you like, and press Send. Or you delete it.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="box">
+      <h2>Nothing is ever sent without your approval</h2>
+      <ul>
+        <li>Every reply waits as a <strong>draft</strong> until <em>you</em> press Send. If you never press Send, nothing goes out.</li>
+        <li>It never deletes, archives or moves your emails. It only adds a small label.</li>
+        <li>It never emails your contacts, posts anything, or pays for anything.</li>
+        <li>Danny never gets your Gmail password.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>How your data is handled</h2>
+    <ul>
+      <li><strong>It runs inside your own Google account</strong> as a small Google Apps Script. The lead Sheet belongs to you.</li>
+      <li><strong>One outside service:</strong> to sort emails and write drafts, the text of new emails is sent to an AI service (Google's Gemini API, on a paid plan). On paid plans, Google's terms say it does not use your emails or the AI's replies to improve its products. Google keeps a log of requests for a limited time to catch abuse and meet legal requirements.</li>
+      <li><strong>Danny only sees your lead Sheet if you share it</strong> with him for the weekly check-in. You can remove his access anytime.</li>
+      <li><strong>When you stop,</strong> your Sheet stays yours, and Danny deletes any copies of your data he has.</li>
+    </ul>
+    <p class="small">When you first set it up, Google shows a "this app isn't verified" warning. That's normal for a private script made just for your account. It isn't a public app. On the setup call we read every permission together before you click Allow.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Free 30-day pilot: 2 spots</h2>
+    <p>Lead Catcher is new, and I want proof that it works for a real business before I charge anyone. So the first <strong>2 businesses</strong> get it <strong>free for 30 days</strong>.</p>
+    <div class="price">
+      <div class="card">
+        <strong>Pilot: $0</strong>
+        <p>30 days free. No card needed. In return, I'd ask for honest feedback. If you're happy, a short quote I can share would help too, but only if you want to give one.</p>
+      </div>
+      <div class="card">
+        <strong>After the pilot: $29/month</strong>
+        <p>Only if you decide to keep it. No setup fee, no contract, cancel anytime. Early customers keep this price.</p>
+      </div>
+    </div>
+    <p class="small" style="margin-top:14px">It runs on the Gmail and Google Sheets you already have, so there's nothing new to buy from Google.</p>
+    <p><strong>Good fit:</strong> small local service businesses that get customer inquiries by email, like roofers, contractors, landscapers, cleaners, salons, auto shops and real estate agents.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Questions owners ask</h2>
+    <details>
+      <summary>Will it email my customers by itself?</summary>
+      <p>No. It only writes drafts. Nothing goes out until you open the draft and press Send.</p>
+    </details>
+    <details>
+      <summary>Can Danny read my email?</summary>
+      <p>No. The script runs in your Google account and I never get your password. I only see the lead Sheet if you choose to share it with me.</p>
+    </details>
+    <details>
+      <summary>What if it gets something wrong?</summary>
+      <p>It sometimes will. It might miss a lead, flag something that isn't one, or write a draft that needs editing. That's why you approve every reply. During the pilot I track every mistake and adjust it. At worst, a mistake costs you a deleted draft.</p>
+    </details>
+    <details>
+      <summary>Will it mess up my inbox?</summary>
+      <p>No. It doesn't delete, move or archive anything. It adds a label and leaves drafts in the thread. Remove it and your inbox is exactly as it was.</p>
+    </details>
+    <details>
+      <summary>Does it work with Outlook or Yahoo?</summary>
+      <p>Not yet. Right now it works with Gmail and Google Workspace only.</p>
+    </details>
+    <details>
+      <summary>How long does setup take?</summary>
+      <p>About 45 to 60 minutes on one video call. You click the buttons and I guide you. We test it with a fake lead before it goes live.</p>
+    </details>
+    <details>
+      <summary>How do I cancel?</summary>
+      <p>Anytime, with no fee. It takes about 2 minutes: turn off the script's trigger (it stops right away), then remove its access in your Google account settings. I'll walk you through it, and your Sheet stays yours.</p>
+    </details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Who's behind this</h2>
+    <p>I'm Danny O'Hare, a college student in Plymouth, New Hampshire. I build AI tools and Google Sheets automations.</p>
+    <p>To be upfront: Lead Catcher is new, and I don't have paying customers yet. You'd be one of the first businesses to use it. That's why the pilot is free and the price is low. You'd be dealing with me directly, and I'll answer your emails myself.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Interested? Send me an email.</h2>
+    <p>Tell me what kind of business you run and roughly how many customer emails you get in a week. I'll reply personally. No pressure, and "no thanks" is a perfectly fine answer.</p>
+    <a class="btn" href="mailto:oharedanny340@gmail.com?subject=Lead%20Catcher%20free%20pilot">Email Danny</a>
+    <p class="small" style="margin-top:12px">oharedanny340@gmail.com</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="small">Lead Catcher · Danny O'Hare · Plymouth, NH<br>This page has no tracking, no cookies and no ads.</p>
+  </div>
+</footer>
+
+</body>
+</html>
