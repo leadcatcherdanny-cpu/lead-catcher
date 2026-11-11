@@ -36,6 +36,10 @@
   details p { margin:10px 0 4px; }
   a { color:var(--accent-dark); }
   footer { padding:28px 0 40px; }
+  .about { display:flex; gap:20px; align-items:center; margin-bottom:16px; }
+  .about img { width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid var(--accent); flex:none; }
+  .about p { margin:0; }
+  .local { margin-top:14px; font-size:.95rem; color:var(--muted); }
   @media (min-width:640px) { h1 { font-size:2.5rem; } .price { grid-template-columns:1fr 1fr; } }
 </style>
 </head>
@@ -47,6 +51,7 @@
     <h1>Stop losing customers in a busy inbox.</h1>
     <p class="lead">Lead Catcher watches your Gmail for new customer inquiries, writes each one down in a Google Sheet, and drafts a reply for you to check. You stay in charge: nothing is sent unless you press Send.</p>
     <a class="btn" href="mailto:oharedanny340@gmail.com?subject=Lead%20Catcher%20free%20pilot">Ask about the free 30-day pilot</a>
+    <p class="local">Built in Plymouth, NH, for New England service businesses.</p>
   </div>
 </header>
 
@@ -98,7 +103,8 @@
 
 <section>
   <div class="wrap">
-    <h2>Free 30-day pilot: 2 spots</h2>
+    <h2>Founding pilot: 2 free spots</h2>
+    <p><strong>You help shape it, and you keep the $29 price for good.</strong></p>
     <p>Lead Catcher is new, and I want proof that it works for a real business before I charge anyone. So the first <strong>2 businesses</strong> get it <strong>free for 30 days</strong>.</p>
     <div class="price">
       <div class="card">
@@ -152,8 +158,12 @@
 <section>
   <div class="wrap">
     <h2>Who's behind this</h2>
-    <p>I'm Danny O'Hare, a college student in Plymouth, New Hampshire. I build AI tools and Google Sheets automations.</p>
-    <p>To be upfront: Lead Catcher is new, and I don't have paying customers yet. You'd be one of the first businesses to use it. That's why the pilot is free and the price is low. You'd be dealing with me directly, and I'll answer your emails myself.</p>
+    <div class="about">
+      <img src="danny.jpg" alt="Danny O'Hare" width="120" height="120">
+      <p>I'm Danny O'Hare, a college student in Plymouth, New Hampshire, originally from Rhode Island. I build AI tools and Google Sheets automations.</p>
+    </div>
+    <p>Why I built this: I know a contractor who lost a big job because a customer's email sat unread for a week. I started thinking about how to build a system that's efficient and makes sure you never miss a lead. That's Lead Catcher.</p>
+    <p>To be upfront: Lead Catcher is new, and I don't have paying customers yet. You'd be one of the first businesses to use it. That's why the pilot is free and the price is low. You'd be dealing with me directly, and I'll answer your emails myself. I'll set it up with you on a video call.</p>
   </div>
 </section>
 
