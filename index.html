@@ -40,6 +40,18 @@
   .about img { width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid var(--accent); flex:none; }
   .about p { margin:0; }
   .local { margin-top:14px; font-size:.95rem; color:var(--muted); }
+  .demo-stat { font-size:1.15rem; font-weight:700; margin:0 0 18px; }
+  .sheet { border:1px solid var(--line); border-radius:10px; overflow:hidden; background:#fff; font-size:.92rem; margin-bottom:8px; }
+  .sheet .row { display:grid; grid-template-columns: 1.1fr 1.6fr .8fr; gap:10px; padding:10px 14px; border-top:1px solid var(--line); align-items:center; }
+  .sheet .row:first-child { border-top:0; }
+  .sheet .head { background:#1f2937; color:#fff; font-weight:700; font-size:.85rem; }
+  .sheet .town { display:block; color:var(--muted); font-size:.82rem; }
+  .pill { display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700; font-size:.82rem; }
+  .pill.high { background:#fecaca; color:#7f1d1d; } .pill.med { background:#fef3c7; color:#78350f; } .pill.low { background:#dcfce7; color:#14532d; }
+  .draft { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin-top:22px; font-size:.95rem; }
+  .draft .label { display:inline-block; color:#b91c1c; font-weight:700; font-size:.85rem; margin-bottom:4px; }
+  .draft .subj { font-weight:700; margin-bottom:10px; }
+  .draft p { margin:0 0 10px; }
   @media (min-width:640px) { h1 { font-size:2.5rem; } .price { grid-template-columns:1fr 1fr; } }
 </style>
 </head>
@@ -71,6 +83,31 @@
       <li><strong>It logs each one in your Google Sheet:</strong> name, contact info, what they need, where, how urgent, and the next step. The Sheet is in your own Google account.</li>
       <li><strong>It drafts a reply</strong> right in the email thread. You read it, change anything you like, and press Send. Or you delete it.</li>
     </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>See it in action</h2>
+    <p class="demo-stat">In a 40-email test inbox, it caught all 16 real leads and skipped the spam, receipts and newsletters.</p>
+    <p class="small">From a test run on a fictional roofing company, Granite Ridge Roofing. Every email, name and phone number is made up. Below are 5 of the 16 leads it logged, with the urgency it gave each one.</p>
+    <div class="sheet">
+      <div class="row head"><div>Customer</div><div>What they need</div><div>Urgency</div></div>
+      <div class="row"><div><strong>Bob Tierney</strong><span class="town">Lindell</span></div><div>Emergency roof repair (storm damage)</div><div><span class="pill high">High</span></div></div>
+      <div class="row"><div><strong>Eleanor Pratt</strong><span class="town">Halden Falls</span></div><div>Leak inspection near chimney</div><div><span class="pill high">High</span></div></div>
+      <div class="row"><div><strong>Brian Okafor</strong><span class="town">Wexbury</span></div><div>Inspection + letter before a Nov 20 closing</div><div><span class="pill high">High</span></div></div>
+      <div class="row"><div><strong>Sandra Kim</strong><span class="town">Marrow Pond</span></div><div>Inspection + maintenance quote, 3 apartment buildings</div><div><span class="pill med">Medium</span></div></div>
+      <div class="row"><div><strong>Rosa Delgado</strong><span class="town">Varney Notch</span></div><div>Metal roof quote (email written in Spanish)</div><div><span class="pill low">Low</span></div></div>
+    </div>
+    <div class="draft">
+      <span class="label">Draft</span>
+      <div class="subj">Re: A question about our old house</div>
+      <p>Dear Mrs. Pratt,</p>
+      <p>Thank you for reaching out, and I'm sorry to hear about the stain on your living room ceiling. Water staining near the chimney that has grown since September is worth getting looked at promptly, and we'd be glad to help.</p>
+      <p>To prepare for an inspection, could you let us know whether the stain is wet or dry to the touch, and whether you've noticed any dripping or new marks since it first appeared? We'd also like to confirm the best morning to call you at 603-555-0193.</p>
+      <p>We look forward to speaking with you.<br>Warm regards,<br>Granite Ridge Roofing</p>
+    </div>
+    <p class="small" style="margin-top:10px">The reply Lead Catcher drafted for one test email. It sat in Gmail as a draft. Nothing was sent.</p>
   </div>
 </section>
 
